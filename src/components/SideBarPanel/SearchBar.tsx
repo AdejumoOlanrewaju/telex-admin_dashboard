@@ -6,7 +6,7 @@ const SearchPanelBar = () => {
   const [open, setOpen] = React.useState(false)
   return (
     <>
-      <div className='mb-4 bg-gray-200 flex items-center px-2 py-1.5 relative text-sm rounded'>
+      <div className='mb-3 bg-stone-300 flex items-center px-2 py-1.5 relative text-sm rounded'>
         <FiSearch className='mr-1' />
         <input 
           onFocus = {(e) => {

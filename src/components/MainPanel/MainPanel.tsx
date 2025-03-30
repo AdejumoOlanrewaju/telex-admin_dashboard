@@ -1,8 +1,11 @@
+import CardGrid from "./CardGrid"
+import TopBar from "./TopBar"
 
 const MainPanel = () => {
   return (
-    <div className='p-4 rounded-e-md h-[200vh] bg-stone-200'>
-      <span>Hi</span>
+    <div className='rounded-e-md h-[200vh] bg-white p-4'>
+      <TopBar/>
+      <CardGrid/>
     </div>
   )
 }
