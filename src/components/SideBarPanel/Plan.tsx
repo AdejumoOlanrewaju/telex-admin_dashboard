@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Plan = () => {
     return (
@@ -9,7 +8,7 @@ const Plan = () => {
                     <span className='block mt-1'>Pay as you go</span>
                 </div>
 
-                <span className='font-bold px-2 py-1.5 bg-gray-200 transition-colors hover:bg-gray-300'>Support</span>
+                <span className='font-bold px-2 py-1.5  bg-stone-300 transition-colors hover:bg-stone-400 rounded'>Support</span>
             </div>
         </div>
     )

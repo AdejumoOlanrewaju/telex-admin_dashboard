@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FiUser } from 'react-icons/fi'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -52,7 +52,7 @@ const ActivityGraph = () => {
 
 
   return (
-    <div className='lg:col-span-8 col-span-12 rounded border border-stone-300 overflow-hidden'>
+    <div className='lg:col-span-8 col-span-12 rounded border border-stone-300 overflow-hidden shadow overflow-x-auto'>
       <div className='p-4'>
         <h3 className='flex items-center gap-1.5 font-medium'>
           <FiUser />Activity
@@ -60,7 +60,7 @@ const ActivityGraph = () => {
 
       </div>
       <div className='w-full h-72 p-4'>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" style={{minInlineSize : "300px"}}>
             <LineChart
               width={500}
               height={300}

@@ -1,4 +1,3 @@
-import React from 'react'
 import StatCard from './StatCard'
 import ActivityGraph from './ActivityGraph'
 import RadarChartUI from './RadarChartUI'

@@ -1,9 +1,8 @@
-import React from 'react'
 import { FiArrowUpRight, FiDollarSign, FiMoreHorizontal } from 'react-icons/fi'
 
 const RecentTransactions = () => {
     return (
-        <div className='col-span-12 p-3 border border-stone-300 rounded'>
+    <div className='col-span-12 p-3 border border-stone-300 rounded shadow overflow-x-auto'>
             <div className="mb-4 flex items-center justify-between">
                 <h3 className='flex items-center gap-1.5 font-medium'>
                     <FiDollarSign />Recent Transactions
@@ -11,7 +10,7 @@ const RecentTransactions = () => {
                 <button className='text-sm text-violet-500 hover:underline'>See all</button>
             </div>
 
-            <table className='table-auto  w-full'>
+            <table className='table-auto min-w-[390px] w-full'>
                 <TableHead />
                 <tbody>
                     <TableRow

@@ -1,4 +1,3 @@
-import React from 'react'
 import { UserRoundPen } from 'lucide-react'
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
 const AccountCtaUI = () => {

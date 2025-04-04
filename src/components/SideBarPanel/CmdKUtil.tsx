@@ -27,10 +27,10 @@ export const CommandMenu = ({ open, setOpen }: PropTypes) => {
             open={open} 
             onOpenChange={setOpen} 
             label="Global Command Menu"
-            className="fixed inset-0 bg-stone-700/35"
+            className="fixed inset-0 bg-stone-700/35 z-[90]"
             onClick={() => setOpen(false)}
         >
-            <div className="bg-stone-100 w-full max-w-lg mx-auto border border-stone-300 py-4 px-3 rounded-lg shadow-lg mt-12 overflow-hidden" onClick = {(e) => e.stopPropagation()}>
+            <div className="bg-stone-100 w-[95%] max-w-lg mx-auto border border-stone-300 py-4 px-3 rounded-lg shadow-lg mt-12 overflow-hidden" onClick = {(e) => e.stopPropagation()}>
                 <Command.Input 
                     value = {value}
                     onValueChange={setValue}

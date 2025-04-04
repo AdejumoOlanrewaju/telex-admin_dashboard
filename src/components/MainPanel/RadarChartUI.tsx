@@ -1,4 +1,3 @@
-import React from 'react';
 import { FiEye } from 'react-icons/fi';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
@@ -43,14 +42,14 @@ const RadarChartUI = () => {
         },
     ];
     return (
-        <div className='lg:col-span-4 col-span-12 border border-stone-300 rounded'>
+        <div className='lg:col-span-4 col-span-12 border border-stone-300 rounded shadow overflow-x-auto    '>
             <div className='p-4'>
                 <h3 className='flex items-center gap-1.5 font-medium'>
                     <FiEye />Usage
                 </h3>
             </div>
             <div className="h-72 p-4">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height="100%" style={{minInlineSize : "300px"}}>
                     <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
                         <PolarGrid />
                         <PolarAngleAxis dataKey="subject" />

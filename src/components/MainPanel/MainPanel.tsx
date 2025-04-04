@@ -1,10 +1,12 @@
 import CardGrid from "./CardGrid"
 import TopBar from "./TopBar"
+import MenuType from "../../types/utilTypes";
 
-const MainPanel = () => {
+
+const MainPanel = ({setOpenMenu}: MenuType) => {
   return (
-    <div className='rounded-e-md h-[200vh] bg-white p-4'>
-      <TopBar/>
+    <div className='rounded-e-md bg-white p-4 w-full lg:w-auto'>
+      <TopBar setOpenMenu = {setOpenMenu}/>
       <CardGrid/>
     </div>
   )

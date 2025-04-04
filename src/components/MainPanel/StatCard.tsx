@@ -1,5 +1,5 @@
-import React from 'react'
 import { FiTrendingDown, FiTrendingUp } from 'react-icons/fi';
+import { motion } from "motion/react"       
 
 const StatCard = () => {
     return (
@@ -46,8 +46,8 @@ const Card = ({
 }) => {
     return (
         <>
-            <div className="border border-stone-300 shadow p-4 col-span-12 xl:col-span-4  rounded">
-                <div className="flex items-start justify-between mb-8">
+            <motion.div initial = {{ scale : 0.4 }} animate = {{ scale : 1 }} transition={{ duration : 0.4, scale : { type : "spring", visualDuration : 0.4, bounce : 0.2 } }} className="border border-stone-300 shadow p-4 col-span-12 xl:col-span-4 rounded ">
+                <div className="flex items-start justify-between mb-8 flex-wrap gap-3">
                     <div>
                         <span className='mb-2 text-stone-500 text-sm'>{title}</span>
                         <p className='text-3xl font-semibold'>{value}</p>
@@ -62,7 +62,7 @@ const Card = ({
                 </div>
 
                 <span className='text-stone-500 text-sm'>{period}</span>
-            </div>
+            </motion.div>
         </>
     )
 }
