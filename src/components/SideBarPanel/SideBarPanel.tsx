@@ -15,7 +15,7 @@ const SideBarPanel = ({ openMenu, setOpenMenu }: MenuType) => {
   }
   return (
     <>
-      <div onClick={(e) => e.stopPropagation()} className={`p-4 bg-stone-200 lg:rounded-s-md sidebarPanel z-[70] fixed top-0 left-0 lg:relative transition-transform -translate-x-[100%] lg:translate-x-0 ${openMenu ? "translate-x-0" : "-translate-x-[100%]"}`}>
+      <div onClick={(e) => e.stopPropagation()} className={`p-4 bg-gray-200 lg:rounded-s-md sidebarPanel z-[70] fixed top-0 left-0 lg:relative transition-transform -translate-x-[100%] lg:translate-x-0 ${openMenu ? "translate-x-0" : "-translate-x-[100%]"}`}>
         <div className='h-[calc(100vh-32px-48px)] sticky top-2 overflow-y-auto'>
           <span data-attr="close-menu" onClick={() => setOpenMenu && setOpenMenu(false)} className="cursor-pointer p-2 hover:bg-stone-400 block w-fit ml-auto rounded-sm mb-2 lg:hidden">
             <FiMenu />
